@@ -43,7 +43,7 @@ jobs:
           language: ${{ matrix.language }}
 
       - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v6
 
       # CodeQL traces the compiler as it runs, so javac MUST actually execute.
       # --rerun-tasks + --no-build-cache stop Gradle from serving compileJava from
